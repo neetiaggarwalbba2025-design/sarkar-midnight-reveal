@@ -38,15 +38,16 @@ function Midnight() {
       <main>
         <section
           id="buy"
-          className="mx-auto grid max-w-[1400px] gap-10 px-4 py-10 md:grid-cols-2 md:gap-16 md:px-8"
+          className="mx-auto grid max-w-[1400px] items-start gap-10 px-4 py-10 md:grid-cols-2 md:gap-16 md:px-8"
         >
           <img
             src={heroImg}
             alt="Midnight by Sarkar 100ml parfum bottle in deep indigo chess-king glass"
             width={1408}
             height={1712}
-            className="w-full bg-secondary object-cover"
+            className="w-full bg-secondary object-cover md:sticky md:top-24"
           />
+
 
           <div className="md:pt-8">
             <h1 className="font-display text-4xl tracking-[0.02em] md:text-6xl">
