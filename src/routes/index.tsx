@@ -44,7 +44,9 @@ function Midnight() {
             src={heroImg}
             alt="Midnight by Sarkar 100ml parfum bottle in deep indigo chess-king glass"
             width={1408}
-            height={1712}
+            height={1459}
+            fetchPriority="high"
+            decoding="async"
             className="w-full bg-secondary object-cover md:sticky md:top-24"
           />
 
