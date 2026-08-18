@@ -1,7 +1,7 @@
 import { useState } from "react";
-import lilyImg from "@/assets/note-lily.jpg";
-import irisImg from "@/assets/note-iris.jpg";
-import oudImg from "@/assets/note-oud.jpg";
+import lilyImg from "@/assets/note-lily.webp";
+import irisImg from "@/assets/note-iris.webp";
+import oudImg from "@/assets/note-oud.webp";
 
 export function Notes() {
   const notes = [

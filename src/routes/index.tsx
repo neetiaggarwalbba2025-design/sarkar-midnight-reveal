@@ -2,9 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Nav } from "@/components/midnight/Nav";
 import { Notes, Claims, Accordion, Footer } from "@/components/midnight/sections";
-import heroImg from "@/assets/midnight-hero.jpg";
-import packagingImg from "@/assets/midnight-packaging.jpg";
-import editorialImg from "@/assets/midnight-editorial.jpg";
+import heroImg from "@/assets/midnight-hero.webp";
+import packagingImg from "@/assets/midnight-packaging.webp";
+import editorialImg from "@/assets/midnight-editorial.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
