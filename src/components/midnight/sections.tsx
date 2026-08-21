@@ -1,22 +1,28 @@
 import { useState } from "react";
 import lilyImg from "@/assets/note-lily.webp";
+import lilyImgSm from "@/assets/note-lily-600.webp";
 import irisImg from "@/assets/note-iris.webp";
+import irisImgSm from "@/assets/note-iris-600.webp";
 import oudImg from "@/assets/note-oud.webp";
+import oudImgSm from "@/assets/note-oud-600.webp";
 
 export function Notes() {
   const notes = [
     {
       img: lilyImg,
+      imgSm: lilyImgSm,
       label: "TOP NOTES",
       body: "Black Lily, Bergamot Zest, Cold Pear",
     },
     {
       img: irisImg,
+      imgSm: irisImgSm,
       label: "HEART NOTES",
       body: "Iris Root, Violet Leaf, Black Pepper",
     },
     {
       img: oudImg,
+      imgSm: oudImgSm,
       label: "BASE NOTES",
       body: "Oud, Vanilla Absolute, Dark Musk",
     },
@@ -43,10 +49,12 @@ export function Notes() {
           <div key={n.label}>
             <img
               src={n.img}
+              srcSet={`${n.imgSm} 600w, ${n.img} 900w`}
+              sizes="(min-width: 768px) 33vw, 100vw"
               alt={n.body}
               loading="lazy"
-              width={1000}
-              height={1000}
+              width={900}
+              height={900}
               className="aspect-square w-full object-cover"
             />
             <h3 className="mt-5 font-display text-lg tracking-[0.08em]">

@@ -3,8 +3,11 @@ import { useState } from "react";
 import { Nav } from "@/components/midnight/Nav";
 import { Notes, Claims, Accordion, Footer } from "@/components/midnight/sections";
 import heroImg from "@/assets/midnight-hero.webp";
+import heroImgSm from "@/assets/midnight-hero-600.webp";
 import packagingImg from "@/assets/midnight-packaging.webp";
+import packagingImgSm from "@/assets/midnight-packaging-600.webp";
 import editorialImg from "@/assets/midnight-editorial.webp";
+import editorialImgSm from "@/assets/midnight-editorial-600.webp";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -24,6 +27,16 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "product" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [
+      {
+        rel: "preload",
+        as: "image",
+        href: heroImgSm,
+        imagesrcset: `${heroImgSm} 600w, ${heroImg} 1200w`,
+        imagesizes: "(min-width: 768px) 50vw, 100vw",
+        fetchpriority: "high",
+      },
+    ],
   }),
   component: Midnight,
 });
@@ -42,8 +55,10 @@ function Midnight() {
         >
           <img
             src={heroImg}
+            srcSet={`${heroImgSm} 600w, ${heroImg} 1200w`}
+            sizes="(min-width: 768px) 50vw, 100vw"
             alt="Midnight by Sarkar 100ml parfum bottle in deep indigo chess-king glass"
-            width={1408}
+            width={1200}
             height={1459}
             fetchPriority="high"
             decoding="async"
@@ -111,6 +126,8 @@ function Midnight() {
 
             <img
               src={packagingImg}
+              srcSet={`${packagingImgSm} 600w, ${packagingImg} 1200w`}
+              sizes="(min-width: 768px) 50vw, 100vw"
               alt="Midnight parfum with matte black Sarkar tube and box packaging"
               loading="lazy"
               width={1200}
@@ -123,10 +140,12 @@ function Midnight() {
         <section className="relative">
           <img
             src={editorialImg}
+            srcSet={`${editorialImgSm} 600w, ${editorialImg} 1200w`}
+            sizes="100vw"
             alt="Man in black coat holding the Midnight parfum bottle at night"
             loading="lazy"
-            width={1408}
-            height={1008}
+            width={1200}
+            height={859}
             className="h-[70vh] w-full object-cover"
           />
           <p className="pointer-events-none absolute inset-0 flex items-end justify-center pb-12 font-display text-[9vw] leading-none tracking-[0.08em] text-ink-foreground mix-blend-difference md:text-[6vw]">
