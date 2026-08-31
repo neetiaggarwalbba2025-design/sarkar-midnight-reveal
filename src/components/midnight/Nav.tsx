@@ -1,6 +1,9 @@
 export function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur">
+      <div className="border-b border-border bg-foreground px-4 py-2 text-center font-display text-[0.65rem] tracking-[0.18em] text-background md:text-xs">
+        FREE THREE 7ML MINI PERFUMES WITH EVERY ORDER OF MIDNIGHT
+      </div>
       <div className="mx-auto flex h-16 max-w-[1400px] items-center justify-between gap-3 px-4 md:px-8">
         <span className="hidden shrink-0 font-display text-[0.7rem] tracking-[0.35em] text-muted-foreground sm:block">
           NEW · 2026
@@ -17,7 +20,6 @@ export function Nav() {
         >
           BUY NOW
         </a>
-
       </div>
     </header>
   );

@@ -30,18 +30,15 @@ export function Notes() {
 
   return (
     <section className="mx-auto max-w-[1400px] px-4 py-20 md:px-8">
-      <h2 className="font-display text-2xl tracking-[0.1em] md:text-4xl">
-        PRODUCT DESCRIPTION
-      </h2>
+      <h2 className="font-display text-2xl tracking-[0.1em] md:text-4xl">PRODUCT DESCRIPTION</h2>
       <div className="mt-4 h-px w-full bg-border" />
       <p className="mt-8 max-w-4xl text-base leading-relaxed text-foreground md:text-lg">
-        A nocturnal lily, opened after dark. Cold pear and bergamot break first,
-        then black lily and iris bloom deep and powdery, before oud and vanilla
-        absolute settle in for the rest of the night.
+        A nocturnal lily, opened after dark. Cold pear and bergamot break first, then black lily and
+        iris bloom deep and powdery, before oud and vanilla absolute settle in for the rest of the
+        night.
       </p>
       <p className="mt-2 max-w-4xl text-base leading-relaxed text-muted-foreground md:text-lg">
-        Midnight by Sarkar is for the ones who arrive when the room has already
-        gone quiet.
+        Midnight by Sarkar is for the ones who arrive when the room has already gone quiet.
       </p>
 
       <div className="mt-12 grid gap-8 md:grid-cols-3">
@@ -57,9 +54,7 @@ export function Notes() {
               height={900}
               className="aspect-square w-full object-cover"
             />
-            <h3 className="mt-5 font-display text-lg tracking-[0.08em]">
-              {n.label}
-            </h3>
+            <h3 className="mt-5 font-display text-lg tracking-[0.08em]">{n.label}</h3>
             <p className="mt-2 text-sm text-muted-foreground">{n.body}</p>
           </div>
         ))}
@@ -81,9 +76,7 @@ export function Claims() {
     <section className="bg-ink py-20 text-ink-foreground">
       <div className="mx-auto grid max-w-[1400px] gap-10 px-4 md:grid-cols-2 md:items-center md:px-8">
         <div>
-          <p className="font-display text-xs tracking-[0.35em] text-ink-muted">
-            THE CRAFT
-          </p>
+          <p className="font-display text-xs tracking-[0.35em] text-ink-muted">THE CRAFT</p>
           <h2 className="mt-4 font-display text-4xl leading-[0.95] tracking-[0.02em] md:text-6xl">
             BUILT FOR
             <br />
@@ -95,12 +88,8 @@ export function Claims() {
         <div>
           {claims.map(([a, b]) => (
             <div key={a} className="border-t border-ink-line py-6">
-              <p className="font-display text-2xl tracking-[0.04em] md:text-3xl">
-                {a}
-              </p>
-              <p className="mt-1 font-display text-xs tracking-[0.3em] text-ink-muted">
-                {b}
-              </p>
+              <p className="font-display text-2xl tracking-[0.04em] md:text-3xl">{a}</p>
+              <p className="mt-1 font-display text-xs tracking-[0.3em] text-ink-muted">{b}</p>
             </div>
           ))}
         </div>
@@ -136,12 +125,8 @@ export function Accordion() {
             className="flex w-full items-center justify-between py-6 text-left"
             aria-expanded={open === f.q}
           >
-            <span className="font-display text-lg tracking-[0.06em] md:text-2xl">
-              {f.q}
-            </span>
-            <span className="text-2xl text-muted-foreground">
-              {open === f.q ? "−" : "+"}
-            </span>
+            <span className="font-display text-lg tracking-[0.06em] md:text-2xl">{f.q}</span>
+            <span className="text-2xl text-muted-foreground">{open === f.q ? "−" : "+"}</span>
           </button>
           {open === f.q && (
             <p className="max-w-3xl pb-6 text-sm leading-relaxed text-muted-foreground md:text-base">

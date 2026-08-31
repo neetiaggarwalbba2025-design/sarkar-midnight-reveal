@@ -16,7 +16,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Midnight by Sarkar: a deep black lily parfum with iris, oud and vanilla. 25% oil concentration, IFRA certified, formulated in France. ₹2,499.",
+          "Midnight by Sarkar: a deep black lily parfum with iris, oud and vanilla. 25% oil concentration, IFRA certified, formulated in France. ₹2,099.",
       },
       { property: "og:title", content: "MIDNIGHT by Sarkar — Dark Lily Parfum" },
       {
@@ -65,13 +65,9 @@ function Midnight() {
             className="w-full bg-secondary object-cover md:sticky md:top-24"
           />
 
-
           <div className="md:pt-8">
             <h1 className="font-display text-4xl tracking-[0.02em] md:text-6xl">
-              MIDNIGHT{" "}
-              <span className="text-2xl text-muted-foreground md:text-3xl">
-                (100ML)
-              </span>
+              MIDNIGHT <span className="text-2xl text-muted-foreground md:text-3xl">(100ML)</span>
             </h1>
 
             <div className="mt-6 flex flex-wrap gap-2">
@@ -92,10 +88,8 @@ function Midnight() {
               It smells like black lily, wet iris and the hour no one remembers.
             </p>
 
-            <p className="mt-8 font-display text-4xl">₹ 2,499</p>
-            <p className="mt-1 text-sm text-muted-foreground">
-              Incl. of all taxes
-            </p>
+            <p className="mt-8 font-display text-4xl">₹ 2,099</p>
+            <p className="mt-1 text-sm text-muted-foreground">Incl. of all taxes</p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <div className="flex items-center justify-between border border-border px-4 py-3 sm:w-36">
